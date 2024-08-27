@@ -7,14 +7,19 @@ function setup(){
 
 function draw(){
     noFill();
-    stroke(255,255,255);
+
+    strokeR = Math.floor(Math.random() * 256);
+    strokeG = Math.floor(Math.random() * 256);
+    strokeB = Math.floor(Math.random() * 256);
+
+    stroke(strokeR,strokeG,strokeB);
     strokeWeight(3);
 
     const x = (width - size) / 2;
     const y = (height - size) / 2;
     lenghtX = Math.floor(Math.random() * 80) + 10;
     lengthY = Math.floor(Math.random() * 80) + 10;
-    rect(x, y, lenghtX, lengthY);
+    quad(x, y, lenghtX, lengthY);
 }
 
 //making a rect with randomnized length on the lines
