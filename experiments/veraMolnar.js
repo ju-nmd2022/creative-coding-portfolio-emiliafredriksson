@@ -19,6 +19,10 @@ function squareLayers(x, y, size, layers){
     strokeB = Math.floor(Math.random() * 256);
 
     stroke(strokeR,strokeG,strokeB);
+
+    strokeW = Math.floor(Math.random() * 2 + 1);
+    
+    strokeWeight(strokeW);
     
     for(let i = 0; i < layers; i++){
         if(Math.random() > 1){
