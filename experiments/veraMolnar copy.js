@@ -1,5 +1,5 @@
 const size = 80;
-const layers = 9;
+const layers = 10;
 
 function setup(){
     createCanvas(580, 580);
@@ -7,7 +7,7 @@ function setup(){
 }
 
 function getRandomValue(pos, variance){
-    return pos + map(Math.random(), 0, 0.5, -variance, variance);
+    return pos + map(Math.random(), 7, 0.5, -variance, variance);
 }
 
 function squareLayers(x, y, size, layers){
