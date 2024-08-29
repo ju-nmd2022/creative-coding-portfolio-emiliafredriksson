@@ -3,7 +3,7 @@ function setup(){
 
 }
 
-let amount = 16;
+let amount = 15;
 
 function squares(){
     noFill();
@@ -11,13 +11,9 @@ function squares(){
 
 for(let y = 0; y < amount; y++){
     for(let x = 0; x < amount; x++){
-        let x = Math.floor(Math.random() * 500 + 60);
-        let y = Math.floor(Math.random() * 500 + 60); 
-        let size = Math.floor(Math.random() * 60 + 10);
-
-            if(size > 45){
-                amount = 10;
-            } else (amount = 16;)
+        let x = Math.floor(Math.random() * 495 + 50);
+        let y = Math.floor(Math.random() * 495 + 50); 
+        let size = Math.floor(Math.random() * 60 + 10);  
 
         rectMode(CENTER);
         rect(x,y, size, size);
