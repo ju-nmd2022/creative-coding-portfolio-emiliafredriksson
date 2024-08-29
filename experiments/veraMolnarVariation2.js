@@ -1,5 +1,5 @@
 const size = 80;
-const layers = 10;
+const layers = 9;
 
 function setup(){
     createCanvas(580, 580);
@@ -7,18 +7,17 @@ function setup(){
 }
 
 function getRandomValue(pos, variance){
-    return pos + map(Math.random(), 6, 0.5, -variance, variance);
+    return pos + map(Math.random(), 0, 0.5, -variance, variance);
 }
 
 function squareLayers(x, y, size, layers){
     const variance = size / layers;
     noFill();
 
-    strokeR = Math.floor(Math.random() * 256);
-    strokeG = Math.floor(Math.random() * 256);
-    strokeB = Math.floor(Math.random() * 256);
+    colorMode(HSB * 100);
+    col = noise(x, y) * 100;
 
-    stroke(strokeR,strokeG,strokeB);
+    stroke(col, 10, 40);
 
     strokeW = Math.floor(Math.random() * 2 + 1);
 

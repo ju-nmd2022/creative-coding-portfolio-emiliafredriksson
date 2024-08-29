@@ -3,7 +3,7 @@ const layers = 9;
 
 function setup(){
     createCanvas(580, 580);
-    background(0,0,0);
+    background(0);
 }
 
 function getRandomValue(pos, variance){
@@ -49,5 +49,3 @@ function draw(){
 
     noLoop();
 }
-
-//making a rect with randomnized length on the lines
