@@ -3,7 +3,7 @@ function setup(){
 
 }
 
-const amount = 18;
+let amount = 16;
 
 function squares(){
     noFill();
@@ -14,6 +14,11 @@ for(let y = 0; y < amount; y++){
         let x = Math.floor(Math.random() * 500 + 60);
         let y = Math.floor(Math.random() * 500 + 60); 
         let size = Math.floor(Math.random() * 60 + 10);
+
+            if(size > 45){
+                amount = 10;
+            } else (amount = 16;)
+
         rectMode(CENTER);
         rect(x,y, size, size);
 
