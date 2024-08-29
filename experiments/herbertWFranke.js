@@ -7,7 +7,7 @@ let amount = 15;
 
 function squares(){
     noFill();
-    stroke(255);
+    stroke(0);
 
 for(let y = 0; y < amount; y++){
     for(let x = 0; x < amount; x++){
@@ -24,7 +24,7 @@ for(let y = 0; y < amount; y++){
 }
 
 function draw(){
-    background(0);
+    background(255);
 
     squares();
 }
