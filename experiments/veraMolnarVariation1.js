@@ -7,7 +7,7 @@ function setup(){
 }
 
 function getRandomValue(pos, variance){
-    return pos + map(Math.random(), 7, 0.5, -variance, variance);
+    return pos + map(Math.random(), 6, 0.5, -variance, variance);
 }
 
 function squareLayers(x, y, size, layers){
