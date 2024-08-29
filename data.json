@@ -6,7 +6,17 @@
   },
   {
     "file": "experiments/veraMolnar.js",
-    "name": "Dialog between emotion and method recreation",
+    "name": "Dialog between emotion and method recreation 1.0",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/veraMolnarVariation1.js",
+    "name": "Dialog between emotion and method recreation 2.0",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/veraMolnarVariation2.js",
+    "name": "Dialog between emotion and method recreation 3.0",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   }
 ]

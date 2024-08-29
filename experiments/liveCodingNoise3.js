@@ -16,7 +16,7 @@ function draw(){
     fill(0);
 
    for(let y = 0; y < numRows; y++){
-    for(let x = 0; y < numCols; x++){
+    for(let x = 0; x < numCols; x++){
         const value = noise(x / divider, y / divider) * size;
         ellipse(size / 2 + x * size, size / 2 + y * size, value);
     }
