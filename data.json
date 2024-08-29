@@ -13,5 +13,20 @@
     "file": "experiments/veraMolnarVariation2.js",
     "name": "Dialog between emotion and method recreation 3.0",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/herbertWFranke.js",
+    "name": "Random Square 1.0",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/herbertWFrankeVariation1.js",
+    "name": "Random Square 2.0",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/herbertWFrankeVariation2.js",
+    "name": "Random Square 3.0",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   }
 ]
