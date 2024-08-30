@@ -3,31 +3,31 @@
   {
     "file": "experiments/veraMolnar.js",
     "name": "Dialog between emotion and method recreation 1.0",
-    "description": "This is a recreation of Vera Molnars artwork, Dialog between emotion and method. I choose this because I got inspired by the look of it and the use of color. "
+    "description": "This is a recreation of Vera Molnars artwork, Dialog between emotion and method. I choose this because I got inspired by the look of it and the use of color. I used for loops and math.random in this project. The first for loop is used when creating the square layers and the second loop is used in the function draw to create a grid for the squares. I used the math.random when setting the colors to randomnize the color values."
   },
   {
     "file": "experiments/veraMolnarVariation1.js",
     "name": "Dialog between emotion and method recreation 2.0",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "I continued playing around with the code form the recreation of Vera Molnars artwork. I changed some values to create a different look of it."
   },
   {
     "file": "experiments/veraMolnarVariation2.js",
     "name": "Dialog between emotion and method recreation 3.0",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "Once again I continued experimenting with the Vera Molnar artwork. I changed from using math.random to using noise instead for the color randomness. I also changed to using HSB instead of RGB."
   },
   {
     "file": "experiments/herbertWFranke.js",
     "name": "Random Square 1.0",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "This is a recreation of Herbert W Frankes artwork Random Square. I got inspired by the randomness and the aethetic of the artwork. I used a for loop to create the squares and math.random to randomnize the position and the size of the squares. I also changed the rectMode to center."
   },
   {
     "file": "experiments/herbertWFrankeVariation1.js",
     "name": "Random Square 2.0",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "I continued working with the code of the Random Square artwork. I changed so that it randomnized both the width and the height of the squares so that it became rectangles instead. I also added a math.random on the strokeWeight to create more variation, then I added an if statement where the stroke color changed to pink over a certain strokeWeight.  "
   },
   {
     "file": "experiments/herbertWFrankeVariation2.js",
     "name": "Random Square 3.0",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "Once again I continued experimenting with the code of the Random Square artwork. In this one I added one more color and I added a fill with a lowered opacity to each color. The color depends on the strokeWeight which I defined in an if statement. "
   }
 ]
