@@ -17,17 +17,17 @@
   },
   {
     "file": "experiments/herbertWFranke.js",
-    "name": "Random Square 1.0",
+    "name": "Random Square Recreation 1.0",
     "description": "This is a recreation of Herbert W Frankes artwork Random Square. I got inspired by the randomness and the aethetic of the artwork. I used a for loop to create the squares and math.random to randomnize the position and the size of the squares. I also changed the rectMode to center."
   },
   {
     "file": "experiments/herbertWFrankeVariation1.js",
-    "name": "Random Square 2.0",
+    "name": "Random Square Recreation 2.0",
     "description": "I continued working with the code of the Random Square artwork. I changed so that it randomnized both the width and the height of the squares so that it became rectangles instead. I also added a math.random on the strokeWeight to create more variation, then I added an if statement where the stroke color changed to pink over a certain strokeWeight.  "
   },
   {
     "file": "experiments/herbertWFrankeVariation2.js",
-    "name": "Random Square 3.0",
+    "name": "Random Square Recreation 3.0",
     "description": "Once again I continued experimenting with the code of the Random Square artwork. In this one I added one more color and I added a fill with a lowered opacity to each color. The color depends on the strokeWeight which I defined in an if statement. "
   }
 ]
