@@ -1,8 +1,10 @@
+// Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.
+
 [
   {
     "file": "experiments/veraMolnar.js",
     "name": "Dialog between emotion and method recreation 1.0",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "This is a recreation of Vera Molnars artwork, Dialog between emotion and method. I choose this because I got inspired by the look of it and the use of color. "
   },
   {
     "file": "experiments/veraMolnarVariation1.js",
