@@ -17,7 +17,7 @@ function squareLayers(x, y, size, layers){
     colorMode(HSB * 100);
     col = noise(x, y) * 100;
 
-    stroke(col, 10, 40);
+    stroke(col, 40, 100);
 
     strokeW = Math.floor(Math.random() * 2 + 1);
 
