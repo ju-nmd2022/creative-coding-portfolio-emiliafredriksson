@@ -9,7 +9,8 @@ function setup(){
 
 function particlesCreation(){
 for( let i = 0; i < num; i++){
-particles.push(createVector(random(width), random(height)));
+    // the following line was borrowed from https://editor.p5js.org/dobladov/sketches/E_Zbo5GgM
+    particles.push(createVector(random(width), random(height)));
 }
 
 stroke(255);
@@ -25,6 +26,7 @@ function draw(){
     strokeWeight(2.5);
 
     for(let i = 0; i < num; i++){
+        // the following 6 lines was borrowed from https://editor.p5js.org/dobladov/sketches/E_Zbo5GgM 
         let p = particles[i];
         point(p.x, p.y);
         let n = noise(p.x * noiseScale, p.y * noiseScale);
