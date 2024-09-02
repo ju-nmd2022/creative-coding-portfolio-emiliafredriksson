@@ -1,6 +1,8 @@
 const num = 2000;
-const noiseScale = 0.05;
+const noiseScale = 0.02;
 const particles = [];
+const lengths = [];
+const speed = 0.2;
 
 function setup(){
     createCanvas(600, 600);
@@ -11,11 +13,10 @@ function particlesCreation(){
 for( let i = 0; i < num; i++){
     // the following line was borrowed from https://editor.p5js.org/dobladov/sketches/E_Zbo5GgM
     particles.push(createVector(random(width), random(height)));
+    lengths.push(random(5, 100));
 }
 
 stroke(255);
-
-
 }
 
 function draw(){
@@ -27,13 +28,26 @@ function draw(){
 
     for(let i = 0; i < num; i++){
         // the following 6 lines was borrowed from https://editor.p5js.org/dobladov/sketches/E_Zbo5GgM 
-        let p = particles[i];
-        point(p.x, p.y);
+        let p = particles[i]; 
+        let len = lengths[i];
+        
         let n = noise(p.x * noiseScale, p.y * noiseScale);
         let a = TAU * n;
-        p.x += cos(a);
-        p.y +=  sin(a);
 
+        let endX = p.x + cos(a) * len * speed;
+        let endY = p.y + sin(a) * len * speed;
+
+       line(p.x, p.y, endX, endY);
+
+       p.x = endX;
+       p.y = endY;
+
+        if (p.x < 0) p.x = width;
+        if (p.x > width) p.x = 0;
+        if (p.y < 0) p.y = height;
+        if (p.y > height) p.y = 0;
+
+        noLoop();
     }
 
 }
