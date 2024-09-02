@@ -39,6 +39,7 @@ function draw(){
 
        p.x = endX;
        p.y = endY;
+
     }
 
 }
