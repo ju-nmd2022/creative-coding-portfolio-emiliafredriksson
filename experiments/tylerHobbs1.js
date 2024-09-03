@@ -87,7 +87,7 @@ function generateAgents(){
     }
 }
 
-const fieldSize = 50;
+const fieldSize = 10;
 const maxCols = Math.ceil(innerWidth / fieldSize);
 const maxRows = Math.ceil(innerHeight / fieldSize);
 const divider = 4;
