@@ -2,7 +2,7 @@ const num = 2000;
 const noiseScale = 0.02;
 const particles = [];
 const lengths = [];
-const speed = 0.03;
+const speed = 0.3;
 
 function setup(){
     createCanvas(600, 600);
@@ -12,13 +12,13 @@ function setup(){
 function particlesCreation(){
 for( let i = 0; i < num; i++){
     particles.push(createVector(random(width), random(height)));
-    lengths.push(random(5, 100));
+    lengths.push(random(5, 10));
 }
 
 stroke(255);
 }
 
-function draw(){
+function draw(){ 
     background(0);
 
     particlesCreation();
