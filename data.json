@@ -29,5 +29,20 @@
     "file": "experiments/herbertWFrankeVariation2.js",
     "name": "Random Square Recreation 3.0",
     "description": "Once again I continued experimenting with the code of the Random Square artwork. In this one I added one more color and I added a fill with a lowered opacity to each color. The color depends on the strokeWeight which I defined in an if statement. "
+  },
+  {
+    "file": "experiments/tylerHobbsBW.js",
+    "name": "Flowfield veins",
+    "description": "This artwork is inspired by Tyler Hobbs flowfilds artworks. I played around with the values in the Agent class to create an effect I enjoyed."
+  },
+  {
+    "file": "experiments/tylerHobbsColor.js",
+    "name": "Flowfield veins with color",
+    "description": "In this artwork I reused the same code as in the flowfield vains, however I added colors to make it feel more alive."
+  },
+  {
+    "file": "experiments/tylerHobbsStraight.js",
+    "name": "Flowfield experiment",
+    "description": "In this code I used the same code as in the earlier two artworks, however I changed values to experiment what would happen."
   }
 ]
