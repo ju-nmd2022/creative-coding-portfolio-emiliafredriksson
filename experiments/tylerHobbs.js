@@ -1,8 +1,8 @@
-const num = 2000;
-const noiseScale = 0.02;
+const num = 1000;
+const noiseScale = 0.03;
 const particles = [];
 const lengths = [];
-const speed = 0.3;
+const speed = 0.2;
 
 function setup(){
     createCanvas(600, 600);
@@ -12,7 +12,7 @@ function setup(){
 function particlesCreation(){
 for( let i = 0; i < num; i++){
     particles.push(createVector(random(width), random(height)));
-    lengths.push(random(5, 10));
+    lengths.push(random(5, 20));
 }
 
 stroke(255);
@@ -40,6 +40,17 @@ function draw(){
        p.x = endX;
        p.y = endY;
 
+       if(p.x < 0){
+            p.x = innerWidth;
+        } else if(p.x >innerWidth){
+            p.x = 0;
+        }
+
+        if(p.y < 0){
+            p.y = innerHeight;
+        } else if(p.y >innerHeight){
+            p.y = 0;
+        }
     }
 
 }

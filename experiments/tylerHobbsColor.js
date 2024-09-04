@@ -1,3 +1,9 @@
+const color = [
+    "#FFC43D", //yellow
+    "#EF476F", //pink
+    "#1B9AAA" //blue 
+];
+
 class Agent {
     constructor(x, y, maxSpeed, maxForce){
         this.position = createVector(x, y);
@@ -47,7 +53,7 @@ class Agent {
 
     draw(){
         push();
-        stroke(0, 0, 0, 40);
+        stroke(random(color));
         strokeWeight(1.5);
         line(this.lastPosition.x, this.lastPosition.y, this.position.x, this.position.y);
         pop();
@@ -87,10 +93,10 @@ function generateAgents(){
     }
 }
 
-const fieldSize = 50;
+const fieldSize = 10;
 const maxCols = Math.ceil(innerWidth / fieldSize);
 const maxRows = Math.ceil(innerHeight / fieldSize);
-const divider = 15;
+const divider = 4;
 let field;
 let agents = [];
 
