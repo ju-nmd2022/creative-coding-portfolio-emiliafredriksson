@@ -44,5 +44,15 @@
     "file": "experiments/tylerHobbsStraight.js",
     "name": "Flowfield experiment",
     "description": "In this code I used the same code as in the earlier two artworks, however I changed values to experiment what would happen."
+  },
+  {
+    "file": "experiments/wave.js",
+    "name": "Wavy squares",
+    "description": "To make this wave animation I followed a youtube tutorial. I then played around with the values to experiment with the shapes and the movement. "
+  },
+  {
+    "file": "experiments/waveVariation2.js",
+    "name": "Laying wave",
+    "description": "In this animation I used the same code as for the wavy square. However, I continued playing with the values and also the calculations to see what would happen."
   }
 ]
