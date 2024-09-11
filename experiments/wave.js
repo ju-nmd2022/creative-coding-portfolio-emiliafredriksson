@@ -22,6 +22,8 @@ noFill();
 
         strokeWeight(strokeW);
 
+        rotate(5);
+
         beginShape();
         for (let j = 0; j < 360; j += 100){
             const rad = i * 20;
