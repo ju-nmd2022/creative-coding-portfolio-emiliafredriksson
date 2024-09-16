@@ -6,12 +6,13 @@ class Agent {
         this.g = random(255);
         this.b = random(255);
         this.opacity = random(100);
+        this.maxSize = random(100) + 30;
     }
 
     update(){
         this.size += 0.3;
 
-        if(this.size > 50){
+        if(this.size > this.maxSize){
             this.size = 1;
             this.r = random(255);
             this.g = random(255);
