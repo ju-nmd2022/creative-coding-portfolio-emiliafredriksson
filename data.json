@@ -54,5 +54,10 @@
     "file": "experiments/waveVariation2.js",
     "name": "Laying wave",
     "description": "In this animation I used the same code as for the wavy square. However, I continued playing with the values and also the calculations to see what would happen."
+  },
+  {
+    "file": "experiments/ellipseAgent.js",
+    "name": "Ellipse fun",
+    "description": "In this animation i continued using the code from the Tyler Hobbs artworks. I changed thing in the Agent class to create ellipses with size changes instead of velocity and force."
   }
 ]
