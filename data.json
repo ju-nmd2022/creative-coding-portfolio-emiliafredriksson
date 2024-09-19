@@ -59,5 +59,10 @@
     "file": "experiments/ellipseAgent.js",
     "name": "Ellipse fun",
     "description": "In this animation i continued using the code from the Tyler Hobbs artworks. I changed thing in the Agent class to create ellipses with size changes instead of velocity and force."
+  },
+  {
+    "file": "experiments/waveSound.js",
+    "name": "Sound try",
+    "description": ""
   }
 ]
