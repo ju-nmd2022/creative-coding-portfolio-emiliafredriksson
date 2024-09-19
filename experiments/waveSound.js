@@ -1,16 +1,23 @@
 // the following code is written after yt tutorial: https://www.youtube.com/watch?v=vmhRlDyPHMQ 
 
 let oscillator;
+let soundStarted = false;
 
 function setup(){
     // WEBGL made it possible to make it 3D
     createCanvas(innerWidth, innerHeight, WEBGL);
     angleMode(DEGREES);
 
-    window.addEventListener("load", () => {
-        oscillator = new Tone.Oscillator(440, "sine").toDestination();
-        oscillator.start(); // Start the oscillator
+    canvas.addEventListener("click", () => {
+        // Initialize Tone.js audio context and start oscillator
+        if (!soundStarted) { // Ensure the sound only starts once
+            Tone.start();  // This will initialize the audio context after the first user interaction
+            oscillator = new Tone.Oscillator(440, "sine").toDestination();
+            oscillator.start(); // Start the oscillator
+            soundStarted = true; // Set the flag to avoid multiple starts
+        }
     });
+
 }
 
 function createWave(){
