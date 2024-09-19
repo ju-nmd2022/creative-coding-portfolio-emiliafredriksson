@@ -1,5 +1,7 @@
 // the following code is written after yt tutorial: https://www.youtube.com/watch?v=vmhRlDyPHMQ 
 
+let oscillator;
+
 function setup(){
     // WEBGL made it possible to make it 3D
     createCanvas(innerWidth, innerHeight, WEBGL);
@@ -7,7 +9,6 @@ function setup(){
 
     window.addEventListener("load", () => {
         oscillator = new Tone.Oscillator(440, "sine").toDestination();
-        oscillator.frequency.value = 440; // Set to a default frequency
         oscillator.start(); // Start the oscillator
     });
 }
@@ -15,6 +16,8 @@ function setup(){
 function createWave(){
 rotateX(60);
 noFill();
+
+let ySum = 0;
 
     for(let i = 0; i < 15; i++){
 
@@ -35,12 +38,21 @@ noFill();
             const rad = i * 20;
             const x = rad * cos(j);
             const y = rad * sin(j);
+            ySum += y; 
 // makes it move up and down, + i * nr creates the wave effect
             const z = sin(frameCount * 3 + i * 20) * 70;
 
             vertex(x, y, z);
         }
         endShape(CLOSE);
+    }
+
+    const yAvg = ySum / (15 * 360 / 100);
+
+    const frequency = map(yAvg, -300, 300, 200, 1000);
+
+    if (oscillator) {
+        oscillator.frequency.value = frequency;
     }
 }
 
