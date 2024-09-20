@@ -47,7 +47,7 @@ function createWave() {
 
             // Accumulate ySum for only the first square (i === 0)
             if (i === 0) {
-                 ySum += y;
+                 ySum += sin(frameCount * 0.05 + j) * 50;
             }
 
             const z = sin(frameCount * 3 + i * 20) * 70;
