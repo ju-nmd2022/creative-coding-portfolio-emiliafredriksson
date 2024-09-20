@@ -26,8 +26,6 @@ function createWave() {
     rotateX(60);
     noFill();
 
-    let ySum = 0; // Reset ySum at the start of the wave creation
-
     for (let i = 0; i < 15; i++) {
         const r = map(sin(frameCount), -1, 1, 0, 255);
         const g = map(i, 0, 50, 0, 255);
@@ -45,29 +43,12 @@ function createWave() {
             const x = rad * cos(j);
             const y = rad * sin(j);
 
-            // Accumulate ySum for only the first square (i === 0)
-            if (i === 0) {
-                 ySum += y;
-            }
-
             const z = sin(frameCount * 3 + i * 20) * 70;
             vertex(x, y, z);
         }
         endShape(CLOSE);
     }
 
-    // Calculate the frequency based on the ySum of the selected square (i === 0)
-    const yAvg = ySum / (360 / 100); // Adjust yAvg calculation
-
-    console.log(`ySum: ${ySum}, yAvg: ${yAvg}`); // Debugging output
-
-    // Map yAvg to frequency
-    const frequency = map(yAvg, -300, 300, 200, 1000);
-
-    // Update oscillator frequency
-    if (oscillator) {
-        oscillator.frequency.value = frequency;
-    }
 }
 
 function draw() {
