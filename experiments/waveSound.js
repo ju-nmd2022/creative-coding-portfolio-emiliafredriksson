@@ -10,11 +10,10 @@ function setup(){
 
     canvas.addEventListener("click", () => {
         // Initialize Tone.js audio context and start oscillator
-        if (!soundStarted) { // Ensure the sound only starts once
-            Tone.start();  // This will initialize the audio context after the first user interaction
+        if (!soundStarted) {  
             oscillator = new Tone.Oscillator(440, "sine").toDestination();
-            oscillator.start(); // Start the oscillator
-            soundStarted = true; // Set the flag to avoid multiple starts
+            oscillator.start();
+            soundStarted = true; 
         }
     });
 

@@ -98,8 +98,12 @@ function draw(){
     for(let agent of agents){
         const x = Math.floor(agent.position.x / fieldSize);
         const y = Math.floor(agent.position.y / fieldSize);
-        const desiredDirection = field[x][y];
-        agent.follow(desiredDirection);
+
+        if (x >= 0 && x < maxCols && y >= 0 && y < maxRows) {
+            const desiredDirection = field[x][y];
+            agent.follow(desiredDirection);
+        }
+        
         agent.update();
         agent.checkBorders();
         agent.draw();
