@@ -62,7 +62,7 @@
   },
   {
     "file": "experiments/waveSoundCopy.js",
-    "name": "Sound try",
-    "description": ";)"
+    "name": "Annoying wave",
+    "description": "(CLICK: to start, CLICK AGAIN: to stop) In this code I have created sound by making a synth. Depending on the R value in the RGB codes the synth plays a different tone."
   }
 ]
